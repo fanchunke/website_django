@@ -37,6 +37,9 @@ class Project(models.Model):
 class ArticleType(models.Model):
 	article_type = models.CharField(max_length=50, unique=True)
 
+	def __unicode__(self):
+		return self.article_type
+
 
 # The Article Model.
 class Article(models.Model):
@@ -46,5 +49,8 @@ class Article(models.Model):
 	body = models.TextField()
 	article_type = models.ForeignKey(ArticleType, related_name='articles')
 	project = models.ForeignKey(Project, related_name='articles')
+
+	def __unicode__(self):
+		return self.title
 
 
