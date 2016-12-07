@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, ArticleType, Article, ServiceType, Location
+from .models import Project, ArticleType, Article, ServiceType, Location, SubProject
 
 # Register your models here.
 admin.site.register(Project)
@@ -13,3 +13,4 @@ class ArticleAdmin(admin.ModelAdmin):
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(ServiceType)
 admin.site.register(Location)
+admin.site.register(SubProject)
