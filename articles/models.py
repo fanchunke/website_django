@@ -7,7 +7,8 @@ from projects.models import Project
 
 # The ArticleType Model
 class ArticleType(models.Model):
-	article_type = models.CharField(max_length=50, unique=True)
+	article_type = models.CharField(max_length=50, unique=True, verbose_name='分类')
+	introduction = models.CharField(max_length=100, default='暂无简介', verbose_name='简介')
 
 	class Meta:
 		verbose_name_plural = "文章类型"

@@ -13,11 +13,11 @@ class ProjectAdmin(admin.ModelAdmin):
 
 
 class SubProjectAdmin(admin.ModelAdmin):
-	list_display = ('name',)
+	list_display = ('name', 'introduction')
 
 
 class SerciceTypeAdmin(admin.ModelAdmin):
-	list_display = ('service_type',)
+	list_display = ('service_type', 'introduction')
 
 
 

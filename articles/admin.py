@@ -9,7 +9,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
 class ArticleTypeAdmin(admin.ModelAdmin):
-	list_display = ('article_type', )
+	list_display = ('article_type', 'introduction')
 
 
 admin.site.register(Article, ArticleAdmin)
